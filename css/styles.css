@@ -84,10 +84,23 @@ img {
   font-size: 1.1rem;
 }
 
-
-
 /* RESUME
 ------------------------------------*/
+.resume header {
+  background: #3c8453;
+  color: #f6f6f6;
+  padding: 60px 10%;
+}
+
+.resume main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 30px;
+}
+
+.resume main > section {
+  margin-bottom: 60px;
+}
 
 /* Profile
 ------------------------------------*/
