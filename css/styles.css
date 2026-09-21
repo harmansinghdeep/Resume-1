@@ -137,10 +137,36 @@ img {
 
 /* Work Experience
 ------------------------------------*/
+.resume main > section:nth-child(3) {
+  background: #ffffff;
+  padding: 30px;
+}
+
+.resume main > section:nth-child(3) > section {
+  border-bottom: 1px solid #d3d4d6;
+  padding: 20px 0;
+}
+
+.resume main > section:nth-child(3) > section:last-child {
+  border-bottom: none;
+}
+
 
 /* Education
 ------------------------------------*/
+.resume main > section:nth-child(4) {
+  background: #ffffff;
+  padding: 30px;
+}
 
+.resume main > section:nth-child(4) > section {
+  border-bottom: 1px solid #d3d4d6;
+  padding: 20px 0;
+}
+
+.resume main > section:nth-child(4) > section:last-child {
+  border-bottom: none;
+}
 
 /* FOOTER
 ------------------------------------*/
