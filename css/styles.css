@@ -170,3 +170,17 @@ img {
 
 /* FOOTER
 ------------------------------------*/
+footer {
+  background: #222222;
+  color: #f6f6f6;
+  padding: 40px 10%;
+  text-align: center;
+}
+
+footer a {
+  color: #bcaa96;
+}
+
+footer a:hover {
+  color: #f6f6f6;
+}
