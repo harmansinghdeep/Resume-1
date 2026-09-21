@@ -104,9 +104,36 @@ img {
 
 /* Profile
 ------------------------------------*/
+.resume main > section:first-child {
+  background: #ffffff;
+  padding: 30px;
+}
 
 /* Projects
 ------------------------------------*/
+.resume main > section:nth-child(2) {
+  display: flow-root;
+}
+
+.resume main > section:nth-child(2) > section {
+  background: #ffffff;
+  margin-bottom: 30px;
+  padding: 25px;
+  overflow: hidden;
+}
+
+.resume main > section:nth-child(2) img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  float: left;
+  margin: 0 25px 15px 0;
+}
+
+.resume main > section:nth-child(2) h3 {
+  margin-top: 0;
+}
+
 
 /* Work Experience
 ------------------------------------*/
