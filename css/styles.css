@@ -117,3 +117,21 @@ ul {
 li {
   margin-block: 1rem;
 }
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+@media (min-width: 48rem) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 64rem) {
+  header,
+  main,
+  footer {
+    inline-size: 80%;
+  }
+}
