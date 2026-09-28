@@ -40,3 +40,28 @@ footer {
   align-items: center;
   gap: 1rem;
 }
+/* ==========================================================================
+   TYPOGRAPHY
+   ========================================================================== */
+
+h1 {
+  font-size: 2.5rem;
+  margin-block: 0 0.5rem;
+  color: #2b3a42;
+}
+
+h2 {
+  font-size: 1.875rem;
+  margin-block: 0 2.375rem;
+  color: #505d68;
+}
+
+h3 {
+  font-size: 1.3125rem;
+  margin-block: 1.5rem 0.5rem;
+  color: #505d68;
+}
+
+p {
+  margin-block: 0 1rem;
+}
