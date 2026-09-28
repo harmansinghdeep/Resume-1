@@ -1,186 +1,147 @@
-/*
-COLOR PALETTE
+/* ==========================================================================
+   BASE & RESET
+   ========================================================================== */
 
-Dark green    #3c8453
-Sandy beige   #bcaa96
-Dark gray     #222222
-Light gray    #d3d4d6
-Off-white     #f6f6f6
-*/
-
-/* GLOBAL STYLES 
-------------------------------------*/
-html {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-block: 0;
+  margin-inline: 0;
+  color: #333333;
 }
 
-body {
-  background: #f6f6f6; 
-  color: #222222;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  margin: 0;
+
+/* ==========================================================================
+   LAYOUT
+   ========================================================================== */
+
+header,
+main,
+footer {
+  inline-size: 90%;
+  max-inline-size: 60rem;
+  margin-inline: auto;
+  padding-block: 2rem;
 }
-h1,
-h2,
-h3 {
-  font-family: Georgia, "Times New Roman", serif;
+
+header {
+  border-block-end: 1px solid #e1e4e8;
 }
+
+footer {
+  border-block-start: 1px solid #e1e4e8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+/* ==========================================================================
+   TYPOGRAPHY
+   ========================================================================== */
 
 h1 {
-  font-size: 3.5rem;
-  line-height: 1.1;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  margin-block: 0 0.5rem;
+  color: #2b3a42;
 }
 
 h2 {
-  font-size: 2rem;
-  margin-top: 0;
+  font-size: 1.875rem;
+  margin-block: 0 2.375rem;
+  color: #505d68;
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.3125rem;
+  margin-block: 1.5rem 0.5rem;
+  color: #505d68;
 }
+
+p {
+  margin-block: 0 1rem;
+}
+
+
+/* ==========================================================================
+   LINKS & BUTTONS
+   ========================================================================== */
 
 a {
-  color: #3c8453;
+  display: inline-block;
+  padding-block: 0.75rem;
+  padding-inline: 2.5rem;
+  margin-block: 0.625rem;
+  margin-inline: 0;
+  background-color: #505d68;
+  color: #ffffff;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-a:hover {
-  color: #222222;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-
-/* HOME
-------------------------------------*/
-.home header {
-  background: #3c8453;
-  color: #f6f6f6;
-  padding: 80px 10%;
-}
-
-.home main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 50px 30px;
-}
-
-.home main section {
-  margin-bottom: 50px;
-}
-
-.home main p {
-  font-size: 1.1rem;
-}
-
-/* RESUME
-------------------------------------*/
-.resume header {
-  background: #3c8453;
-  color: #f6f6f6;
-  padding: 60px 10%;
-}
-
-.resume main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 50px 30px;
-}
-
-.resume main > section {
-  margin-bottom: 60px;
-}
-
-/* Profile
-------------------------------------*/
-.resume main > section:first-child {
-  background: #ffffff;
-  padding: 30px;
-}
-
-/* Projects
-------------------------------------*/
-.resume main > section:nth-child(2) {
-  display: flow-root;
-}
-
-.resume main > section:nth-child(2) > section {
-  background: #ffffff;
-  margin-bottom: 30px;
-  padding: 25px;
-  overflow: hidden;
-}
-
-.resume main > section:nth-child(2) img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  float: left;
-  margin: 0 25px 15px 0;
-}
-
-.resume main > section:nth-child(2) h3 {
-  margin-top: 0;
-}
-
-
-/* Work Experience
-------------------------------------*/
-.resume main > section:nth-child(3) {
-  background: #ffffff;
-  padding: 30px;
-}
-
-.resume main > section:nth-child(3) > section {
-  border-bottom: 1px solid #d3d4d6;
-  padding: 20px 0;
-}
-
-.resume main > section:nth-child(3) > section:last-child {
-  border-bottom: none;
-}
-
-
-/* Education
-------------------------------------*/
-.resume main > section:nth-child(4) {
-  background: #ffffff;
-  padding: 30px;
-}
-
-.resume main > section:nth-child(4) > section {
-  border-bottom: 1px solid #d3d4d6;
-  padding: 20px 0;
-}
-
-.resume main > section:nth-child(4) > section:last-child {
-  border-bottom: none;
-}
-
-/* FOOTER
-------------------------------------*/
-footer {
-  background: #222222;
-  color: #f6f6f6;
-  padding: 40px 10%;
-  text-align: center;
+a:hover,
+a:focus {
+  background-color: #3b464f;
 }
 
 footer a {
-  color: #bcaa96;
+  display: inline;
+  padding-block: 0;
+  padding-inline: 0;
+  margin-block: 0;
+  background-color: transparent;
+  color: #505d68;
+  font-size: 1rem;
+  text-decoration: underline;
+  text-transform: none;
 }
 
-footer a:hover {
-  color: #f6f6f6;
+footer a:hover,
+footer a:focus {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+/* ==========================================================================
+   LISTS
+   ========================================================================== */
+
+ul {
+  margin-block: 1.875rem;
+  padding-inline-start: 2rem;
+}
+
+li {
+  margin-block: 1rem;
+}
+
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+@media (min-width: 48rem) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 64rem) {
+  header,
+  main,
+  footer {
+    inline-size: 80%;
+  }
 }
