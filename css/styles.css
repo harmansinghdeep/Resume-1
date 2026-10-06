@@ -92,3 +92,18 @@ header h2 {
   font-size: 1.1rem;
   font-weight: 400;
 }
+.home main {
+  width: min(100% - 2rem, 850px);
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.home main p {
+  margin: 0 0 2rem;
+}
+
+.home main p:first-child {
+  padding: 1.5rem;
+  background: var(--accent-light);
+  border-left: 4px solid var(--accent);
+}
