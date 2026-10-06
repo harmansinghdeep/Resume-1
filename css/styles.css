@@ -212,3 +212,29 @@ footer a {
     font-size: 1.6rem;
   }
 }
+  /* --- EXPLICIT GRID PLACEMENT --- */
+  
+  /* 1. Profile (1st section) - Top Left */
+  body:not(.home) main > section:nth-of-type(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  /* 4. Education (4th section) - Middle Left, in the empty space under Profile */
+  body:not(.home) main > section:nth-of-type(4) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  /* 3. Work Experience (3rd section) - Bottom Left, under Education */
+  body:not(.home) main > section:nth-of-type(3) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  /* 2. Projects (2nd section) - Right Column, spanning the whole right side */
+  body:not(.home) main > section:nth-of-type(2) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+  }
+  
