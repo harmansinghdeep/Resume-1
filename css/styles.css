@@ -62,3 +62,11 @@ a {
 a:hover {
   color: var(--accent);
 }
+h1,
+h2,
+h3,
+h4 {
+  color: var(--neutral-9);
+  font-family: var(--font-heading);
+  line-height: 1.2;
+}
