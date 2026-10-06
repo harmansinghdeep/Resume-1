@@ -334,3 +334,23 @@ header h1 {
     2px 2px 5px black,
     -1px -1px 3px black;
 }
+header h2 {
+  position: absolute;
+  top: 58px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+  margin: 0;
+  padding: 0;
+
+  color: white;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+
+  text-shadow:
+    2px 2px 5px black,
+    -1px -1px 3px black;
+}
