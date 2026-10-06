@@ -107,3 +107,8 @@ header h2 {
   background: var(--accent-light);
   border-left: 4px solid var(--accent);
 }
+body:not(.home) main {
+  width: min(100% - 2rem, var(--content-width));
+  margin: 0 auto;
+  padding: 3rem 0;
+}
