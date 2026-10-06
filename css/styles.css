@@ -1,137 +1,33 @@
-/* ==========================================================================
-   BASE & RESET
-   ========================================================================== */
+:root {
+  /* Base neutral colour */
+  --neutral: oklch(52% 0.025 250);
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+  /*
+    Nine neutral shades.
+    Relative OKLCH is used to create
+    the shades from the base neutral.
+  */
+  --neutral-1: oklch(from var(--neutral) 98% calc(c * 0.35) h);
+  --neutral-2: oklch(from var(--neutral) 94% calc(c * 0.45) h);
+  --neutral-3: oklch(from var(--neutral) 89% calc(c * 0.55) h);
+  --neutral-4: oklch(from var(--neutral) 80% calc(c * 0.7) h);
+  --neutral-5: oklch(from var(--neutral) 68% calc(c * 0.85) h);
+  --neutral-6: oklch(from var(--neutral) 55% c h);
+  --neutral-7: oklch(from var(--neutral) 42% c h);
+  --neutral-8: oklch(from var(--neutral) 28% calc(c * 0.9) h);
+  --neutral-9: oklch(from var(--neutral) 17% calc(c * 0.8) h);
 
-body {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  margin-block: 0;
-  margin-inline: 0;
-  color: #333333;
-}
-/* ==========================================================================
-   LAYOUT
-   ========================================================================== */
+  /* Accent colours */
+  --accent: oklch(57% 0.15 250);
+  --accent-light: oklch(94% 0.035 250);
+  --accent-dark: oklch(45% 0.13 250);
 
-header,
-main,
-footer {
-  inline-size: 90%;
-  max-inline-size: 60rem;
-  margin-inline: auto;
-  padding-block: 2rem;
-}
+  /* Typography */
+  --font-body: "Segoe UI", Arial, sans-serif;
+  --font-heading: Georgia, "Times New Roman", serif;
 
-header {
-  border-block-end: 1px solid #e1e4e8;
-}
-
-footer {
-  border-block-start: 1px solid #e1e4e8;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-/* ==========================================================================
-   TYPOGRAPHY
-   ========================================================================== */
-
-h1 {
-  font-size: 2.5rem;
-  margin-block: 0 0.5rem;
-  color: #2b3a42;
-}
-
-h2 {
-  font-size: 1.875rem;
-  margin-block: 0 2.375rem;
-  color: #505d68;
-}
-
-h3 {
-  font-size: 1.3125rem;
-  margin-block: 1.5rem 0.5rem;
-  color: #505d68;
-}
-
-p {
-  margin-block: 0 1rem;
-}
-/* ==========================================================================
-   LINKS & BUTTONS
-   ========================================================================== */
-
-a {
-  display: inline-block;
-  padding-block: 0.75rem;
-  padding-inline: 2.5rem;
-  margin-block: 0.625rem;
-  margin-inline: 0;
-  background-color: #505d68;
-  color: #ffffff;
-  border-radius: 0.25rem;
-  font-size: 0.75rem;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-a:hover,
-a:focus {
-  background-color: #3b464f;
-}
-
-footer a {
-  display: inline;
-  padding-block: 0;
-  padding-inline: 0;
-  margin-block: 0;
-  background-color: transparent;
-  color: #505d68;
-  font-size: 1rem;
-  text-decoration: underline;
-  text-transform: none;
-}
-
-footer a:hover,
-footer a:focus {
-  background-color: transparent;
-  text-decoration: none;
-}
-/* ==========================================================================
-   LISTS
-   ========================================================================== */
-
-ul {
-  margin-block: 1.875rem;
-  padding-inline-start: 2rem;
-}
-
-li {
-  margin-block: 1rem;
-}
-/* ==========================================================================
-   RESPONSIVE DESIGN
-   ========================================================================== */
-
-@media (min-width: 48rem) {
-  footer {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-@media (min-width: 64rem) {
-  header,
-  main,
-  footer {
-    inline-size: 80%;
-  }
+  /* Layout */
+  --content-width: 1100px;
+  --page-padding: 1.25rem;
+  --section-spacing: 3rem;
 }
