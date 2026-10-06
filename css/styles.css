@@ -237,4 +237,28 @@ footer a {
     grid-column: 2 / 3;
     grid-row: 1 / 4;
   }
-  
+  header {
+  position: relative;
+
+  width: 55%;
+  height: 240px;
+  min-height: 0;
+  margin: 25px auto;
+  padding: 0;
+
+  overflow: hidden;
+
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+
+  background-position: center 58%;
+
+  background-repeat: no-repeat;
+
+  border-bottom: 3px solid var(--accent);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
