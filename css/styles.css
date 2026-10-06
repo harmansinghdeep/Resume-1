@@ -135,3 +135,11 @@ body:not(.home) main section h3 {
   font-size: 1.05rem;
   font-weight: 700;
 }
+body:not(.home) main section p {
+  margin: 0 0 1rem;
+}
+
+body:not(.home) main section ul {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+}
