@@ -112,3 +112,26 @@ body:not(.home) main {
   margin: 0 auto;
   padding: 3rem 0;
 }
+body:not(.home) main section {
+  margin-bottom: var(--section-spacing);
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--neutral-3);
+}
+
+body:not(.home) main section:last-child {
+  border-bottom: 0;
+}
+
+body:not(.home) main section h2 {
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid var(--accent);
+  font-size: 1.5rem;
+}
+
+body:not(.home) main section h3 {
+  margin: 1.25rem 0 0.35rem;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
