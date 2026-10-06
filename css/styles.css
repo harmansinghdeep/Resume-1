@@ -262,3 +262,31 @@ footer a {
   justify-content: flex-start;
   align-items: center;
 }
+header {
+  position: relative;
+
+  width: 55%;
+  height: 240px;
+  min-height: 0;
+
+  margin: 25px auto;
+  padding: 0;
+
+  overflow: hidden;
+
+  /* Banner photo */
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+
+  /* Adjust photo so full face is visible */
+  background-position: center 42%;
+
+  background-repeat: no-repeat;
+
+  border-bottom: 3px solid var(--accent);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
