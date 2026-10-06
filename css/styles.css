@@ -149,3 +149,17 @@ body:not(.home) main img {
   margin: 1rem 0;
   border: 1px solid var(--neutral-3);
 }
+footer {
+  padding: 2rem var(--page-padding);
+  background: var(--neutral-9);
+  color: var(--neutral-3);
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: var(--neutral-2);
+}
