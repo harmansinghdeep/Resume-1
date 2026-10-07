@@ -396,3 +396,8 @@ body.projects .project-card h3 {
 body.projects .project-card p {
   margin: 0;
 }
+/* BACK LINK */
+
+body.projects .back-link {
+  margin-block: 2rem 0;
+}
