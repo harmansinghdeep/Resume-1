@@ -401,3 +401,14 @@ body.projects .project-card p {
 body.projects .back-link {
   margin-block: 2rem 0;
 }
+/* DESKTOP - 3 COLUMNS */
+
+@media (min-width: 48rem) {
+  .projects-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  body.projects main {
+    padding-block: 4rem;
+  }
+}
