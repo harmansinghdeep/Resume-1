@@ -365,3 +365,13 @@ body.projects .projects-section > h2 {
   grid-template-columns: 1fr;
   gap: 1.5rem;
 }
+/* PROJECT CARDS */
+
+body.projects .project-card {
+  margin: 0;
+  padding: 1.25rem;
+
+  background: var(--neutral-2);
+  border: 1px solid var(--neutral-3);
+  border-radius: 0.5rem;
+}
