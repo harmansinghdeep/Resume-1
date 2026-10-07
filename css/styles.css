@@ -340,3 +340,13 @@ body.projects main {
   margin-inline: auto;
   padding-block: 3rem;
 }
+body.projects main > .projects-section {
+  display: block;
+  grid-column: auto;
+  grid-row: auto;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
