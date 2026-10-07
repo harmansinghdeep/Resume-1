@@ -350,3 +350,11 @@ body.projects main > .projects-section {
   padding: 0;
   border: 0;
 }
+body.projects .projects-section > h2 {
+  margin-block: 0 2rem;
+  padding-block-end: 0.6rem;
+
+  border-bottom: 2px solid var(--accent);
+
+  font-size: 1.6rem;
+}
