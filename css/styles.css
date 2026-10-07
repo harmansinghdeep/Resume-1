@@ -386,3 +386,13 @@ body.projects .project-card img {
   border: 1px solid var(--neutral-3);
   border-radius: 0.25rem;
 }
+body.projects .project-card h3 {
+  margin-block: 0 0.75rem;
+
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+}
+
+body.projects .project-card p {
+  margin: 0;
+}
