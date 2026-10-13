@@ -412,3 +412,37 @@ body.projects .back-link {
     padding-block: 4rem;
   }
 }
+/* Soft pastel banner - Resume & Projects only */
+
+body.resume header,
+body.projects header {
+  background: linear-gradient(
+    135deg,
+    #c4d7f2 0%,
+    #d9d2f0 50%,
+    #f3dce7 100%
+  );
+}
+
+/* Name */
+
+body.resume header h1,
+body.projects header h1 {
+  color: #253858;
+  text-shadow: none;
+}
+
+/* Subtitle */
+
+body.resume header h2,
+body.projects header h2 {
+  color: #495b78;
+  text-shadow: none;
+}
+
+/* Remove dark overlay if previously added */
+
+body.resume header::before,
+body.projects header::before {
+  background: none;
+}
