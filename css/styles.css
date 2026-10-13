@@ -212,32 +212,32 @@ footer a {
     font-size: 1.6rem;
   }
 }
-  /* --- EXPLICIT GRID PLACEMENT --- */
-  
-  /* 1. Profile (1st section) - Top Left */
-  body:not(.home) main > section:nth-of-type(1) {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
+/* --- EXPLICIT GRID PLACEMENT --- */
 
-  /* 4. Education (4th section) - Middle Left, in the empty space under Profile */
-  body:not(.home) main > section:nth-of-type(4) {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-  }
+/* 1. Profile (1st section) - Top Left */
+body:not(.home) main > section:nth-of-type(1) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
 
-  /* 3. Work Experience (3rd section) - Bottom Left, under Education */
-  body:not(.home) main > section:nth-of-type(3) {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-  }
+/* 4. Education (4th section) - Middle Left, in the empty space under Profile */
+body:not(.home) main > section:nth-of-type(4) {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
 
-  /* 2. Projects (2nd section) - Right Column, spanning the whole right side */
-  body:not(.home) main > section:nth-of-type(2) {
-    grid-column: 2 / 3;
-    grid-row: 1 / 4;
-  }
-  header {
+/* 3. Work Experience (3rd section) - Bottom Left, under Education */
+body:not(.home) main > section:nth-of-type(3) {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+/* 2. Projects (2nd section) - Right Column, spanning the whole right side */
+body:not(.home) main > section:nth-of-type(2) {
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+}
+header {
   position: relative;
 
   width: 55%;
@@ -416,12 +416,7 @@ body.projects .back-link {
 
 body.resume header,
 body.projects header {
-  background: linear-gradient(
-    135deg,
-    #c4d7f2 0%,
-    #d9d2f0 50%,
-    #f3dce7 100%
-  );
+  background: linear-gradient(135deg, #c4d7f2 0%, #d9d2f0 50%, #f3dce7 100%);
 }
 
 /* Name */
