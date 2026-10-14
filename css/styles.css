@@ -362,12 +362,17 @@ body.projects .projects-section > h2 {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 1.5rem;
 }
 /* PROJECT CARDS */
 
 body.projects .project-card {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  gap: 1rem;
+
   margin: 0;
   padding: 1.25rem;
 
@@ -379,7 +384,7 @@ body.projects .project-card img {
   width: 100%;
   max-width: none;
   height: 12rem;
-  margin-block: 0 1rem;
+  margin-block: 0;
 
   object-fit: cover;
 
