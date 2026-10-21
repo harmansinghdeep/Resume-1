@@ -607,8 +607,8 @@ body.projects .project-card h3 {
   inline-size: 100%;
   block-size: auto;
 
-  max-inline-size: 100%;
-  max-block-size: none;
+  max-inline-size:9rem;
+  
 
   object-fit: contain;
 
