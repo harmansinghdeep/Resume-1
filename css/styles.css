@@ -615,3 +615,30 @@ body.projects .project-card h3 {
   border: 2px solid var(--neutral-3);
   border-radius: 0.75rem;
 }
+.contact-details {
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+
+.contact-details h2 {
+  margin-block: 0 0.5rem;
+  color: var(--neutral-9);
+  font-size: 1.5rem;
+}
+
+.contact-role {
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
+.contact-details p {
+  margin-block: 0.5rem;
+}
+
+.contact-details a {
+  color: var(--accent-dark);
+}
+
+.contact-information {
+  font-size: 0.9rem;
+}
