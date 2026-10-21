@@ -555,3 +555,12 @@ body.projects .project-image-placeholder {
 body.projects .project-card h3 {
   margin-block: 0;
 }
+
+/* Anchor positioned popover */
+
+.contact-popover {
+  position: fixed;
+  position-anchor: --contact-anchor;
+  position-area: bottom span-left;
+
+  margin: 0;
