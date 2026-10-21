@@ -603,3 +603,15 @@ body.projects .project-card h3 {
 
   direction: ltr;
 }
+.contact-photo {
+  inline-size: 100%;
+  block-size: auto;
+
+  max-inline-size: 100%;
+  max-block-size: none;
+
+  object-fit: contain;
+
+  border: 2px solid var(--neutral-3);
+  border-radius: 0.75rem;
+}
