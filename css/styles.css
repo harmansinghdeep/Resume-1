@@ -594,3 +594,12 @@ body.projects .project-card h3 {
     flip-inline,
     flip-block flip-inline;
 }
+.contact-card {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+
+  direction: ltr;
+}
