@@ -564,12 +564,11 @@ body.projects .project-card h3 {
   position-area: bottom span-left;
 
   margin: 0;
-  }
-  .contact-popover {
+}
+.contact-popover {
   inline-size: min(100vi, max(33vi, 26rem));
   max-inline-size: none;
   min-inline-size: 0;
-  
 
   padding: 1.25rem;
 
@@ -607,8 +606,7 @@ body.projects .project-card h3 {
   inline-size: 100%;
   block-size: auto;
 
-  max-inline-size:9rem;
-  
+  max-inline-size: 9rem;
 
   object-fit: contain;
 
@@ -669,7 +667,6 @@ body.projects .project-card h3 {
   background: var(--accent-dark);
 }
 
-
 @container (width < 24rem) {
   .contact-card {
     grid-template-columns: minmax(0, 1fr);
@@ -679,8 +676,6 @@ body.projects .project-card h3 {
     display: block;
   }
 }
-
-
 
 @container (24rem <= width < 28rem) {
   .contact-card {
@@ -692,7 +687,6 @@ body.projects .project-card h3 {
     display: none;
   }
 }
-
 
 @container (width >= 28rem) {
   .contact-card {
