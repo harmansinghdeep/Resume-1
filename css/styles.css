@@ -668,3 +668,57 @@ body.projects .project-card h3 {
 .contact-close:hover {
   background: var(--accent-dark);
 }
+
+
+@container (width < 24rem) {
+  .contact-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contact-bio {
+    display: block;
+  }
+}
+
+
+
+@container (24rem <= width < 28rem) {
+  .contact-card {
+    grid-template-columns: minmax(0, 9rem) minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .contact-bio {
+    display: none;
+  }
+}
+
+
+@container (width >= 28rem) {
+  .contact-card {
+    grid-template-columns: minmax(0, 9rem) minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .contact-bio {
+    display: block;
+  }
+}
+/* Background overlay when contact popover opens */
+
+.contact-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+
+  background: rgb(15 23 42 / 0.55);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+body:has(.contact-popover:popover-open) .contact-overlay {
+  opacity: 1;
+  visibility: visible;
+}
