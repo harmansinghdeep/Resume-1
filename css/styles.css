@@ -372,6 +372,7 @@ body.projects .project-card {
   grid-template-rows: subgrid;
   grid-row: span 3;
   gap: 1rem;
+  
 
   margin: 0;
   padding: 1.25rem;
@@ -380,6 +381,16 @@ body.projects .project-card {
   border: 1px solid var(--neutral-3);
   border-radius: 0.5rem;
 }
+body.projects .project-card:has(.project-button) {
+  display: flex;
+  flex-direction: column;
+  grid-row: span 3;
+}
+
+body.projects .project-button {
+  margin-top: auto;
+}
+
 body.projects .project-card img {
   width: 100%;
   max-width: none;
