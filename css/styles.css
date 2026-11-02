@@ -836,3 +836,24 @@ body.animations .animation-section {
   height: 7rem;
   background: var(--accent);
 }
+
+
+.shape-clip {
+  animation: shape-morph 3s ease-in-out infinite alternate;
+}
+
+@keyframes shape-morph {
+  0% {
+    clip-path: circle(45%);
+    transform: rotate(0deg);
+  }
+
+  50% {
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  }
+
+  100% {
+    clip-path: inset(10% round 25%);
+    transform: rotate(180deg);
+  }
+}
