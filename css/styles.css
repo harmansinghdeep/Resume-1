@@ -876,3 +876,46 @@ body.animations .animation-section {
     transform: scale(1.2);
   }
 }
+
+
+.blend-stage {
+  background: var(--neutral-8);
+}
+
+.blend-circle {
+  position: absolute;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  mix-blend-mode: screen;
+}
+
+.blend-one {
+  background: var(--accent);
+  animation: blend-left 3s ease-in-out infinite alternate;
+}
+
+.blend-two {
+  background: oklch(70% 0.15 340);
+  animation: blend-right 3s ease-in-out infinite alternate;
+}
+
+@keyframes blend-left {
+  from {
+    transform: translateX(-2rem);
+  }
+
+  to {
+    transform: translateX(2rem);
+  }
+}
+
+@keyframes blend-right {
+  from {
+    transform: translateX(2rem);
+  }
+
+  to {
+    transform: translateX(-2rem);
+  }
+}
