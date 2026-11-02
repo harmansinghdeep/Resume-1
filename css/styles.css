@@ -775,3 +775,24 @@ body:has(.contact-popover:popover-open) .contact-overlay {
     transition: none;
   }
 }
+
+
+body.animations main {
+  display: block;
+  width: min(100% - 2rem, var(--content-width));
+  margin-inline: auto;
+}
+
+body.animations header {
+  background: linear-gradient(
+    135deg,
+    var(--accent-light),
+    var(--neutral-2)
+  );
+  text-align: center;
+  padding: 3rem 1.25rem;
+}
+
+body.animations .animation-section {
+  padding-block: 2rem;
+}
