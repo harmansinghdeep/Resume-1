@@ -796,3 +796,36 @@ body.animations header {
 body.animations .animation-section {
   padding-block: 2rem;
 }
+
+
+.animation-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+  margin-block: 2rem;
+}
+
+.animation-cell {
+  min-width: 0;
+  padding: 1.25rem;
+  background: var(--neutral-2);
+  border: 1px solid var(--neutral-3);
+  border-radius: 0.75rem;
+}
+
+.animation-stage {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 15rem;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--accent-light);
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 48rem) {
+  .animation-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
