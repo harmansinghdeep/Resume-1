@@ -716,3 +716,19 @@ body:has(.contact-popover:popover-open) .contact-overlay {
   opacity: 1;
   visibility: visible;
 }
+
+/* Assignment 3B - Button Hover Animations */
+
+.contact-btn,
+.contact-close {
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.contact-btn:hover,
+.contact-close:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.4rem 0.8rem rgb(0 0 0 / 0.2);
+}
