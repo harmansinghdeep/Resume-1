@@ -386,6 +386,16 @@ body.projects .project-card:has(.project-button) {
   flex-direction: column;
   grid-row: span 3;
 }
+body.projects .project-button {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 0.75rem 1.25rem;
+  background: var(--accent);
+  color: white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
 
 body.projects .project-button {
   margin-top: auto;
