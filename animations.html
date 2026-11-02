@@ -8,135 +8,124 @@
   </head>
 
   <body class="animations">
-  </body>
-</html>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">HS</a>
 
-<nav class="site-nav" aria-label="Main navigation">
-  <a href="index.html" class="nav-logo">HS</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li>
+          <button
+            type="button"
+            class="contact-btn"
+            popovertarget="contact-popover"
+          >
+            Contact
+          </button>
+        </li>
+      </ul>
+    </nav>
 
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="resume.html">Resume</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li>
-      <button
-        type="button"
-        class="contact-btn"
-        popovertarget="contact-popover"
-      >
-        Contact
-      </button>
-    </li>
-  </ul>
-</nav>
- 
+    <div class="contact-overlay" aria-hidden="true"></div>
 
-<div class="contact-overlay" aria-hidden="true"></div>
+    <article id="contact-popover" class="contact-popover" popover="auto">
+      <div class="contact-card">
+        <button
+          type="button"
+          class="contact-close"
+          popovertarget="contact-popover"
+          popovertargetaction="hide"
+          aria-label="Close contact information"
+        >
+          &times;
+        </button>
 
-<article id="contact-popover" class="contact-popover" popover="auto">
-  <div class="contact-card">
-  </div>
-</article>
+        <img
+          class="contact-photo"
+          src="images/contact-photo.jpg"
+          alt="Portrait of Harmandeep Singh"
+        />
 
-<button
-  type="button"
-  class="contact-close"
-  popovertarget="contact-popover"
-  popovertargetaction="hide"
-  aria-label="Close contact information"
->
-  &times;
-</button>
+        <div class="contact-details">
+          <h2>Harmandeep Singh</h2>
+          <p class="contact-role">Digital Design Student</p>
 
- <img
-      class="contact-photo"
-      src="images/contact-photo.jpg"
-      alt="Portrait of Harmandeep Singh"
-    />
+          <p class="contact-bio">
+            I am a Digital Design student at North Island College in British
+            Columbia, Canada. I enjoy graphic design, photography, typography,
+            web development, and user experience design.
+          </p>
 
-    <div class="contact-details">
-      <h2>Harmandeep Singh</h2>
-      <p class="contact-role">Digital Design Student</p>
+          <p class="contact-information">
+            <strong>Email:</strong><br />
+            <a href="mailto:harmandeep@example.com"> harmandeep@example.com </a>
+          </p>
 
-      <p class="contact-bio">
-        I am a Digital Design student at North Island College in British
-        Columbia, Canada. I enjoy graphic design, photography, typography,
-        web development, and user experience design.
-      </p>
+          <p class="contact-information">
+            <strong>Phone:</strong><br />
+            <a href="tel:+12505550123">(250) 555-0123</a>
+          </p>
+        </div>
+      </div>
+    </article>
 
-      <p class="contact-information">
-        <strong>Email:</strong><br />
-        <a href="mailto:harmandeep@example.com">
-          harmandeep@example.com
+    <header>
+      <h1>Animation Showcase</h1>
+      <h2>Exploring CSS Motion and Visual Effects</h2>
+    </header>
+
+    <main class="animation-main">
+      <section class="animation-section">
+        <h2>CSS Shape Animations</h2>
+
+        <p>
+          Three creative CSS animations exploring clip-path, filters, and blend
+          modes.
+        </p>
+
+        <div class="animation-grid">
+          <article class="animation-cell">
+            <h3>Shape Morph</h3>
+
+            <div class="animation-stage">
+              <div class="shape shape-clip"></div>
+            </div>
+
+            <p>A geometric shape transforming with CSS clip-path.</p>
+          </article>
+          <article class="animation-cell">
+            <h3>Colour Pulse</h3>
+
+            <div class="animation-stage">
+              <div class="shape shape-filter"></div>
+            </div>
+
+            <p>A glowing circle animated using CSS filters.</p>
+          </article>
+
+          <article class="animation-cell">
+            <h3>Colour Blend</h3>
+
+            <div class="animation-stage blend-stage">
+              <div class="blend-circle blend-one"></div>
+              <div class="blend-circle blend-two"></div>
+            </div>
+
+            <p>Overlapping animated shapes using CSS blend modes.</p>
+          </article>
+        </div>
+
+        <a class="back-link" href="projects.html"> &larr; Back to Projects </a>
+      </section>
+    </main>
+    <footer>
+      <p>
+        © 2026 by Harmandeep Singh |
+        <a href="mailto:harmanchopra5175@gmail.com">
+          harmanchopra5175@gmail.com
         </a>
       </p>
-
-      <p class="contact-information">
-        <strong>Phone:</strong><br />
-        <a href="tel:+12505550123">(250) 555-0123</a>
-      </p>
-    </div>
-  </div>
-</article>
-
-<header>
-  <h1>Animation Showcase</h1>
-  <h2>Exploring CSS Motion and Visual Effects</h2>
-</header>
-
-<main class="animation-main">
-  <section class="animation-section">
-    <h2>CSS Shape Animations</h2>
-
-    <p>
-      Three creative CSS animations exploring clip-path,
-      filters, and blend modes.
-    </p>
-
-    <div class="animation-grid">
-    </div>
-  </section>
-</main>
-
-<article class="animation-cell">
-  <h3>Shape Morph</h3>
-
-  <div class="animation-stage">
-    <div class="shape shape-clip"></div>
-  </div>
-
-  <p>A geometric shape transforming with CSS clip-path.</p>
-</article>
-<article class="animation-cell">
-  <h3>Colour Pulse</h3>
-
-  <div class="animation-stage">
-    <div class="shape shape-filter"></div>
-  </div>
-
-  <p>A glowing circle animated using CSS filters.</p>
-</article>
-
-<article class="animation-cell">
-  <h3>Colour Blend</h3>
-
-  <div class="animation-stage blend-stage">
-    <div class="blend-circle blend-one"></div>
-    <div class="blend-circle blend-two"></div>
-  </div>
-
-  <p>Overlapping animated shapes using CSS blend modes.</p>
-</article>
-
-<a class="back-link" href="projects.html">
-  &larr; Back to Projects
-</a>
-
-<footer>
-  <p>
-    © 2026 by Harmandeep Singh |
-    <a href="mailto:harmanchopra5175@gmail.com">
-      harmanchopra5175@gmail.com
-    </a>
-  </p>
-</footer>
+    </footer>
+  </body>
+</html>
