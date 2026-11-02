@@ -919,3 +919,36 @@ body.animations .animation-section {
     transform: translateX(-2rem);
   }
 }
+
+body.animations .back-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.25rem;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+body.animations .back-link:hover,
+body.animations .back-link:focus-visible {
+  background: var(--accent-dark);
+  transform: translateY(-3px);
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  .shape-clip,
+  .shape-filter,
+  .blend-circle {
+    animation: none;
+  }
+
+  body.animations .back-link {
+    transition: none;
+  }
+}
