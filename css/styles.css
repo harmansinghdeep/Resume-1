@@ -745,3 +745,33 @@ body:has(.contact-popover:popover-open) .contact-overlay {
 .nav-links a:hover {
   transform: translateY(-3px);
 }
+
+
+@keyframes logo-entrance {
+  from {
+    opacity: 0;
+    transform: translateY(-15px) scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.nav-logo {
+  display: inline-block;
+  animation: logo-entrance 1s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-logo {
+    animation: none;
+  }
+
+  .contact-btn,
+  .contact-close,
+  .nav-links a {
+    transition: none;
+  }
+}
