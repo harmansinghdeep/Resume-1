@@ -829,3 +829,10 @@ body.animations .animation-section {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+
+.shape {
+  width: 7rem;
+  height: 7rem;
+  background: var(--accent);
+}
