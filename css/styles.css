@@ -1104,3 +1104,23 @@ body.svg-project main .svg-section {
   transform: translateY(-0.1875rem);
   box-shadow: 0 0.4rem 0.8rem var(--neutral-4);
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .svg-stage #cloud_one,
+  .svg-stage #cloud_two,
+  .svg-stage #_Grain_one_roup_,
+  .svg-stage #rain_two,
+  .svg-stage #rain_three,
+  .svg-stage #Stteam {
+    animation: none;
+  }
+
+  .svg-project .back-link {
+    transition: none;
+  }
+
+  .svg-project .back-link:hover,
+  .svg-project .back-link:focus-visible {
+    transform: none;
+  }
+}
