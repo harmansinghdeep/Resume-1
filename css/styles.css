@@ -1062,3 +1062,23 @@ body.svg-project main .svg-section {
     opacity: 0;
   }
 }
+
+.svg-stage #Stteam {
+  animation: steam-rise 4s ease-in-out 1s infinite backwards;
+}
+
+@keyframes steam-rise {
+  0% {
+    transform: translateY(0.5rem);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+}
