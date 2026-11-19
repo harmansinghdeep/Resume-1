@@ -1033,3 +1033,32 @@ body.svg-project main .svg-section {
     transform: translateX(0.5rem);
   }
 }
+
+.svg-stage #_Grain_one_roup_ {
+  animation: rainfall 2.4s linear 1s infinite backwards;
+}
+
+.svg-stage #rain_two {
+  animation: rainfall 2.4s linear 1.6s infinite backwards;
+}
+
+.svg-stage #rain_three {
+  animation: rainfall 2.4s linear 2.2s infinite backwards;
+}
+
+@keyframes rainfall {
+  0% {
+    transform: translate(0.25rem, -0.25rem);
+    opacity: 0;
+  }
+
+  25%,
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-0.5rem, 0.5rem);
+    opacity: 0;
+  }
+}
