@@ -1015,3 +1015,21 @@ body.svg-project main .svg-section {
   inline-size: 100%;
   block-size: auto;
 }
+
+.svg-stage #cloud_one {
+  animation: cloud-drift 8s ease-in-out 1s infinite alternate both;
+}
+
+.svg-stage #cloud_two {
+  animation: cloud-drift 10s ease-in-out 1.5s infinite alternate-reverse both;
+}
+
+@keyframes cloud-drift {
+  from {
+    transform: translateX(-0.5rem);
+  }
+
+  to {
+    transform: translateX(0.5rem);
+  }
+}
