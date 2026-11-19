@@ -957,3 +957,34 @@ body.animations .back-link:focus-visible {
     transition: none;
   }
 }
+
+
+/* SVG project header */
+
+.svg-project header {
+  inline-size: min(100% - 2rem, var(--content-width));
+  block-size: auto;
+  min-block-size: 10rem;
+  margin-inline: auto;
+  margin-block: 1.5rem;
+  padding-block: 2rem;
+  padding-inline: var(--page-padding);
+  background: linear-gradient(
+    135deg,
+    var(--accent-light),
+    var(--neutral-2)
+  );
+  justify-content: center;
+}
+
+.svg-project header h1,
+.svg-project header h2 {
+  position: static;
+  color: var(--neutral-9);
+  text-shadow: none;
+}
+
+.svg-project header h2 {
+  margin-block-start: 0.5rem;
+  color: var(--neutral-7);
+}
