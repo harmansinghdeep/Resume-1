@@ -988,3 +988,30 @@ body.animations .back-link:focus-visible {
   margin-block-start: 0.5rem;
   color: var(--neutral-7);
 }
+
+
+body.svg-project main {
+  display: block;
+  inline-size: min(100% - 2rem, var(--content-width));
+  margin-inline: auto;
+}
+
+body.svg-project main .svg-section {
+  margin-block: 0;
+  padding-block: 0;
+  border: none;
+}
+
+.svg-stage {
+  max-inline-size: 50rem;
+  margin-inline: auto;
+  margin-block: 2rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.svg-stage svg {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+}
