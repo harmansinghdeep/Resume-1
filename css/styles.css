@@ -1082,3 +1082,25 @@ body.svg-project main .svg-section {
     opacity: 0;
   }
 }
+
+.svg-project .back-link {
+  display: inline-block;
+  padding-block: 0.75rem;
+  padding-inline: 1.25rem;
+  background: var(--accent);
+  color: var(--neutral-1);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.svg-project .back-link:hover,
+.svg-project .back-link:focus-visible {
+  background: var(--accent-dark);
+  color: var(--neutral-1);
+  transform: translateY(-0.1875rem);
+  box-shadow: 0 0.4rem 0.8rem var(--neutral-4);
+}
